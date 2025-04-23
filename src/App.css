@@ -1,42 +1,175 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  color: #ffffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html, body {
+  overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+h1 {
+  font-size: 40px;
+  color: #333333;
+  font-family: "Akatab";
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-style: normal;
+  letter-spacing: -0.5px;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 39px;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 38px;
   }
 }
 
-.card {
-  padding: 2em;
+h2 {
+  font-size: 28px;
+  color: #002555;
+  font-family: "Akatab";
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-style: normal;
+  letter-spacing: -0.7px;
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 900px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+  font-size: 20px;
+  color: #009CE8;
+  font-family: "Akatab";
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-style: normal;
+  letter-spacing: -0.7px;
 }
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 900px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: 22px;
+  color: #333333;
+  font-family: "Akatab";
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: -0.5px;
+  margin: 0;
+  max-width: 1000px;
+}
+@media (max-width: 1200px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.miniText {
+  font-size: 16px;
+  color: #6B6B6B;
+}
+
+.boldText {
+  font-weight: 800;
+}
+
+.blueText {
+  color: #009CE8;
+}
+
+.marginTop7 {
+  margin-top: 7em;
+}
+
+.whitespace {
+  width: 90vw;
+  max-width: 1500px;
+  justify-self: center;
+}
+
+.buttonBoxFrame {
+  margin: 2em 0;
+  display: flex;
+  gap: 2%;
+}
+.buttonBoxFrame .buttonBox {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  border-bottom: 2px solid #009CE8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  width: 32%;
+}
+.buttonBoxFrame .buttonBox:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #002555;
+}
+.buttonBoxFrame .buttonBox h3 {
+  color: #333333;
+}
+
+.boxFrame {
+  margin: 2em 0 5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.boxFrame .box {
+  cursor: pointer;
+  width: 48%;
+}
+.boxFrame .box .line {
+  width: 30%;
+  height: 2px;
+  margin-top: 40px;
+  background-color: #009CE8;
+  transition: background-color 0.3s ease;
+}
+.boxFrame .box:hover .line {
+  background-color: #002555;
+}
+
+.textBluebox {
+  position: relative;
+  top: -5vw;
+  background-color: #002555;
+  padding: 2em 3em 2em 5em;
+  width: 85%;
+}
+.textBluebox h1, .textBluebox p {
+  color: #ffffff;
+}
+
+footer {
+  background-color: #6B6B6B;
+  height: 20em;
+}/*# sourceMappingURL=App.css.map */
