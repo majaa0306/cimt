@@ -1,0 +1,32 @@
+//------------------
+// Partials
+//------------------
+$backgroundColor: #ffffff; 
+$darkBlue: #002555;
+$blue: #009CE8;
+$darkGrey: #333333;
+$grey: #6B6B6B;
+$red: #FF6666;
+
+//------------------
+// Mixins
+//------------------
+@mixin fonts($font-color, $font-family, $font-weight, $letter-spacing) {
+  color: $font-color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+  font-style: normal;
+}
+
+@mixin responsive-font-size($default-size, $size-1200, $size-900) {
+  font-size: $default-size;
+
+  @media (max-width: 1200px) {
+    font-size: $size-1200;
+  }
+
+  @media (max-width: 900px) {
+    font-size: $size-900;
+  }
+}
