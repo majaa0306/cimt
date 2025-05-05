@@ -119,3 +119,131 @@ footer {
   background-color: $grey;
   height: 20em;
 }
+
+.chat-container {
+  position: fixed;
+  border: 1px solid rgb(193, 193, 193);
+  bottom: 1rem;
+  right: 1rem;
+  width: 450px;
+  background: $backgroundColor;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  min-height: 800px;
+  &.visible {
+    display: flex;
+  }
+
+  .chat-title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding: 0.75rem;
+
+    .robert-in-chat {
+      width: 60px;
+      margin-right: 1rem;
+    }
+
+    h2 {
+      flex: 1;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      @include fonts($darkGrey, "Akatab", 500, 1px);
+      color: $blue;
+    }
+
+    .close-chat {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+
+  .chat-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    overflow-y: auto;
+    background: #fafafa;
+    flex: 1;
+
+    .chat-message {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      max-width: 52%;
+
+      &.bot {
+        background: #ffffff;
+        color: $darkBlue;
+        border: 1px solid $blue;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        align-self: flex-start;
+        @include responsive-font-size(16px, 16px, 16px);
+        @include fonts($darkGrey, "Akatab", 500, 1px);
+      }
+
+      &.user {
+        background: #ffffff;
+        color: $darkBlue;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        align-self: flex-end;
+        @include responsive-font-size(16px, 16px, 16px);
+        @include fonts($darkGrey, "Akatab", 500, 1px);
+      }
+    }
+  }
+
+  .chat-input-container {
+    display: flex;
+    padding: 0.5rem 2rem;
+    .chat-input {
+      flex: 1;
+      padding: 0.4rem 0.6rem;
+      border: 1px solid $blue;
+      font-size: 0.9rem;
+    }
+
+    .chat-send {
+      padding: 0.4rem 0.8rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.robert {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  .buttonBox {
+    background: $backgroundColor;
+    padding: 0 1rem;
+    max-width: 200px;
+    font-size: 0.85rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 2px solid $blue;
+    h3 {
+      color: $darkBlue;
+    }
+  }
+
+  img {
+    width: 7em;
+  }
+}
