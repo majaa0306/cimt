@@ -172,4 +172,152 @@ p {
 footer {
   background-color: #6B6B6B;
   height: 20em;
+}
+
+.chat-container {
+  position: fixed;
+  border: 1px solid rgb(193, 193, 193);
+  bottom: 1rem;
+  right: 1rem;
+  width: 450px;
+  background: #ffffff;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  min-height: 800px;
+}
+.chat-container.visible {
+  display: flex;
+}
+.chat-container .chat-title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  padding: 0.75rem;
+}
+.chat-container .chat-title .robert-in-chat {
+  width: 60px;
+  margin-right: 1rem;
+}
+.chat-container .chat-title h2 {
+  flex: 1;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333333;
+  font-family: "Akatab";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: #009CE8;
+}
+.chat-container .chat-title .close-chat {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.chat-container .chat-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  overflow-y: auto;
+  background: #fafafa;
+  flex: 1;
+}
+.chat-container .chat-box .chat-message {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  max-width: 52%;
+}
+.chat-container .chat-box .chat-message.bot {
+  background: #ffffff;
+  color: #002555;
+  border: 1px solid #009CE8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  align-self: flex-start;
+  font-size: 16px;
+  color: #333333;
+  font-family: "Akatab";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+@media (max-width: 1200px) {
+  .chat-container .chat-box .chat-message.bot {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .chat-container .chat-box .chat-message.bot {
+    font-size: 16px;
+  }
+}
+.chat-container .chat-box .chat-message.user {
+  background: #ffffff;
+  color: #002555;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  align-self: flex-end;
+  font-size: 16px;
+  color: #333333;
+  font-family: "Akatab";
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+@media (max-width: 1200px) {
+  .chat-container .chat-box .chat-message.user {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .chat-container .chat-box .chat-message.user {
+    font-size: 16px;
+  }
+}
+.chat-container .chat-input-container {
+  display: flex;
+  padding: 0.5rem 2rem;
+}
+.chat-container .chat-input-container .chat-input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #009CE8;
+  font-size: 0.9rem;
+}
+.chat-container .chat-input-container .chat-send {
+  padding: 0.4rem 0.8rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.robert {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.robert .buttonBox {
+  background: #ffffff;
+  padding: 0 1rem;
+  max-width: 200px;
+  font-size: 0.85rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid #009CE8;
+}
+.robert .buttonBox h3 {
+  color: #002555;
+}
+.robert img {
+  width: 7em;
 }/*# sourceMappingURL=App.css.map */
