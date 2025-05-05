@@ -3,6 +3,7 @@ import './App.css';
 import img2 from './assets/img2.png';
 import img3 from './assets/img3.png';
 import header from './assets/header.png';
+import Chat from './Components/Chat';
 
 import React from "react";
 
@@ -60,6 +61,7 @@ function App() {
         </div>
       </div>
       <h2 className='whitespace marginTop7'>Besøg os på LinkedIn</h2>
+      <Chat />
       <footer>
         
       </footer>
