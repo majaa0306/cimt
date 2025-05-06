@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  @include responsive-font-size(20px, 20px, 20px);
+  @include responsive-font-size(20px, 20px, 17px);
   @include fonts($blue, "Akatab", 800, 3px);
   letter-spacing: -0.7px;
 }
@@ -59,7 +59,7 @@ p {
 
 .whitespace {
   width: 90vw;
-  max-width: 1500px;
+  max-width: 1400px;
   justify-self: center;
 }
 .buttonBoxFrame {
@@ -82,6 +82,16 @@ p {
       color: $darkGrey;
     }
   }
+  @media screen and (max-width:950px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    .buttonBox {
+      margin: 0 auto;
+      max-width: 500px;
+      width: 80%;
+    }
+  }
 }
 .boxFrame {
   margin: 2em 0 5em 0;
@@ -102,8 +112,28 @@ p {
       background-color: $darkBlue;
     }
   }
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 2em;
+    .box {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .box {
+      width: 100%;
+    }
+  }
 }
-
+.imgtop {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/1;
+  @media screen and (max-width:1000px) {
+    aspect-ratio: 3/2;
+  }
+}
 .textBluebox {
   position: relative;
   top: -5vw;
@@ -113,11 +143,13 @@ p {
   h1, p {
     color: $backgroundColor;
   }
-}
-
-footer {
-  background-color: $grey;
-  height: 20em;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    padding: 2em 0;
+    h1, p {
+      padding: 0 20px;
+    }
+  }
 }
 
 .chat-container {
@@ -131,7 +163,7 @@ footer {
   flex-direction: column;
   overflow: hidden;
   z-index: 1000;
-  min-height: 800px;
+  min-height: 80vh;
   &.visible {
     display: flex;
   }
@@ -220,6 +252,11 @@ footer {
       cursor: pointer;
     }
   }
+  @media screen and (max-width:1000px) {
+    width: 96vw;
+    max-width: 500px;
+    right: 2vw;
+  }
 }
 
 .robert {
@@ -230,20 +267,31 @@ footer {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  margin-left: 10px;
 
   .buttonBox {
     background: $backgroundColor;
     padding: 0 1rem;
-    max-width: 200px;
-    font-size: 0.85rem;
+    max-width: 300px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-bottom: 2px solid $blue;
     h3 {
       color: $darkBlue;
+      font-weight: 400;
     }
   }
-
   img {
-    width: 7em;
+    width: 6em;
   }
+  @media screen and (max-width: 1000px) {
+    bottom: 5px;
+    right: 5px;
+    img {
+      width: 4em;
+    }
+  }
+}
+footer {
+  background-color: $grey;
+  height: 20em;
 }

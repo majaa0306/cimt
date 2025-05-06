@@ -34,7 +34,6 @@ export default function Chat() {
         <img
           src={robert}
           alt="Robert"
-          style={{ width: "8em" }}
         />
       </div>
 
