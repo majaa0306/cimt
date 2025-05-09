@@ -1,8 +1,9 @@
 import './App.css';
-// import img1 from './assets/img1.png';
+import img1 from './assets/img1.png';
 import img2 from './assets/img2.png';
 import img3 from './assets/img3.png';
 import header from './assets/header.png';
+import Chat from './Components/Chat';
 
 import React from "react";
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <img src={header} alt="" style={{ width: "100%" }} />
-      {/* <img src={img1} alt="" style={{ width: "100%" }} /> */}
+      <img src={img1} className='imgtop' alt="" style={{ width: "100%" }} />
       <div className='textBluebox'>
         <h1>CIMT som arbejdsplads</h1>
         <p>CIMT’s medarbejdere er dedikerede. Vi synes vores arbejdsopgaver er vigtige, fordi digitalisering handler om liv.</p>
@@ -60,6 +61,7 @@ function App() {
         </div>
       </div>
       <h2 className='whitespace marginTop7'>Besøg os på LinkedIn</h2>
+      <Chat />
       <footer>
         
       </footer>

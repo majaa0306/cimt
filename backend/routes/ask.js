@@ -1,6 +1,5 @@
-import express from 'express';
+import express from 'express'; 
 import { askChatGPT } from '../openai.js';
-
 
 const router = express.Router();
 

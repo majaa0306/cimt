@@ -65,7 +65,7 @@ h3 {
 }
 @media (max-width: 900px) {
   h3 {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -111,7 +111,7 @@ p {
 
 .whitespace {
   width: 90vw;
-  max-width: 1500px;
+  max-width: 1400px;
   justify-self: center;
 }
 
@@ -136,6 +136,18 @@ p {
 .buttonBoxFrame .buttonBox h3 {
   color: #333333;
 }
+@media screen and (max-width: 950px) {
+  .buttonBoxFrame {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .buttonBoxFrame .buttonBox {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 80%;
+  }
+}
 
 .boxFrame {
   margin: 2em 0 5em 0;
@@ -157,6 +169,33 @@ p {
 .boxFrame .box:hover .line {
   background-color: #002555;
 }
+@media screen and (max-width: 1000px) {
+  .boxFrame {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .boxFrame .box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .boxFrame .box {
+    width: 100%;
+  }
+}
+
+.imgtop {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/1;
+}
+@media screen and (max-width: 1000px) {
+  .imgtop {
+    aspect-ratio: 3/2;
+  }
+}
 
 .textBluebox {
   position: relative;
@@ -168,10 +207,14 @@ p {
 .textBluebox h1, .textBluebox p {
   color: #ffffff;
 }
-
-footer {
-  background-color: #6B6B6B;
-  height: 20em;
+@media screen and (max-width: 1000px) {
+  .textBluebox {
+    width: 100%;
+    padding: 2em 0;
+  }
+  .textBluebox h1, .textBluebox p {
+    padding: 0 20px;
+  }
 }
 
 .chat-container {
@@ -185,7 +228,7 @@ footer {
   flex-direction: column;
   overflow: hidden;
   z-index: 1000;
-  min-height: 800px;
+  min-height: 80vh;
 }
 .chat-container.visible {
   display: flex;
@@ -297,6 +340,13 @@ footer {
   border: none;
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+  .chat-container {
+    width: 96vw;
+    max-width: 500px;
+    right: 2vw;
+  }
+}
 
 .robert {
   position: fixed;
@@ -306,18 +356,33 @@ footer {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  margin-left: 10px;
 }
 .robert .buttonBox {
   background: #ffffff;
   padding: 0 1rem;
-  max-width: 200px;
-  font-size: 0.85rem;
+  max-width: 300px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-bottom: 2px solid #009CE8;
 }
 .robert .buttonBox h3 {
   color: #002555;
+  font-weight: 400;
 }
 .robert img {
-  width: 7em;
+  width: 6em;
+}
+@media screen and (max-width: 1000px) {
+  .robert {
+    bottom: 5px;
+    right: 5px;
+  }
+  .robert img {
+    width: 4em;
+  }
+}
+
+footer {
+  background-color: #6B6B6B;
+  height: 20em;
 }/*# sourceMappingURL=App.css.map */
