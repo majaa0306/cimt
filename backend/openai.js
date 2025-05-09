@@ -7,9 +7,15 @@ const openai = new OpenAI({
 });
 
 export async function askChatGPT(question) {
+  // Tilføj instruktioner til prompten for at sikre, at svaret er på dansk og venligt
+  const prompt = `Svar venligst på dansk og vær høflig. Spørgsmålet er: ${question}`;
+
   const chatCompletion = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
-    messages: [{ role: 'user', content: question }],
+    messages: [
+      { role: 'system', content: 'Du skal altid svare på dansk og være venlig.' },
+      { role: 'user', content: prompt }
+    ],
   });
 
   return chatCompletion.choices[0].message.content;
