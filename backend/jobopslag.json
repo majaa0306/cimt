@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "titel": "Frontend udvikler",
+      "lokation": "København",
+      "beskrivelse": "Vi søger en frontend udvikler med erfaring i React og SCSS. Du kommer til at arbejde på brugergrænseflader til industrielle systemer.",
+      "kompetencer": ["React", "SCSS", "UX-design"],
+      "branche": "IT og software",
+      "kontaktperson": "Mette Larsen, Stab, ml@cimt.dk"
+    },
+    {
+      "id": 2,
+      "titel": "Dataanalytiker",
+      "lokation": "København",
+      "beskrivelse": "Er du skarp til at finde mønstre i data? CIMT søger en analytiker med flair for Python og SQL til at understøtte forretningsudvikling.",
+      "kompetencer": ["Python", "SQL", "Power BI"],
+      "branche": "Data og analyse",
+      "kontaktperson": "Jonas Nielsen, Integrations udvikling, jn@cimt.dk"
+    },
+    {
+      "id": 3,
+      "titel": "Projektleder",
+      "lokation": "København",
+      "beskrivelse": "CIMT udvider og mangler en struktureret projektleder til at styre tværgående IT-projekter. Erfaring med agile metoder er en fordel.",
+      "kompetencer": ["Projektledelse", "Scrum", "Kommunikation"],
+      "branche": "Ledelse og IT",
+      "kontaktperson": "Louise Andersen, Strategisk porteføljestyring, la@cimt.dk"
+    }
+  ]
+  
