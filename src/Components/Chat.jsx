@@ -1,5 +1,5 @@
 import { useState } from "react";
-import robert from "../assets/robert.png";
+import robert from "../assets/robert.webp";
 
 export default function Chat() {
   const [messages, setMessages] = useState([
@@ -37,7 +37,6 @@ export default function Chat() {
         />
       </div>
 
-
       <div className={`chat-container ${isChatVisible ? "visible" : ""}`}>
         <div className="chat-title">
           <img
@@ -58,20 +57,29 @@ export default function Chat() {
             </div>
           ))}
         </div>
-        <div className="chat-input-container">
+        <form
+          className="chat-input-container"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSend();
+          }}
+        >
+          <label htmlFor="chat-input" className="visually-hidden">
+            Skriv dit spørgsmål
+          </label>
           <input
+            id="chat-input"
+            name="chat-input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") handleSend();
-            }}
             placeholder="Skriv et spørgsmål..."
             className="chat-input"
+            autoComplete="off"
           />
-          <button onClick={handleSend} className="chat-send">
+          <button type="submit" className="chat-send">
             Send
           </button>
-        </div>
+        </form>
       </div>
     </>
   );

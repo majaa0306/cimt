@@ -2,14 +2,19 @@
 
 import dotenv from 'dotenv';
 dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import askRoute from './routes/ask.js';
+// det sørger for at alle svar fra serveren bliver komprimeret automatisk. Her har jeg installeret compression først med "npm install compression" i backend.
+import compression from 'compression';
+
 
 const app = express();
 const PORT = 3001;
 
+app.use(compression());
 // Her aktiverer vi cors, så vi tillader, at vores frontend må sende forespørgsler til serveren.
 app.use(cors());
 

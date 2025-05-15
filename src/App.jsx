@@ -1,8 +1,8 @@
 import './App.css';
-import img1 from './assets/img1.png';
-import img2 from './assets/img2.png';
-import img3 from './assets/img3.png';
-import header from './assets/header.png';
+import img1 from './assets/img1.webp';
+import img2 from './assets/img2.webp';
+import img3 from './assets/img3.webp';
+import header from './assets/header.webp';
 import Chat from './Components/Chat';
 
 import React from "react";
