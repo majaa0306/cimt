@@ -3,7 +3,7 @@ import robert from "../assets/robert.webp";
 
 export default function Chat() {
   const [messages, setMessages] = useState([
-    { sender: "bot", text: "Hej! Hvad vil du gerne vide om CIMT?" }
+    { sender: "bot", text: "Hej! Kan jeg hjælpe dig med at finde det helt rigtige job? Skriv hvad dine kompetencer er nedenfor." }
   ]);
   const [input, setInput] = useState("");
   const [isChatVisible, setIsChatVisible] = useState(false);

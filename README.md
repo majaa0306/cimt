@@ -1,12 +1,64 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# CIMT - CHATBOT
 
-Currently, two official plugins are available:
+En intelligent chatbot til CIMT, der besvarer spørgsmål om virksomheden og hjælper brugere med at finde ledige stillinger, der passer til deres profil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Svar på spørgsmål om CIMT**  
+  Chatbotten kan besvare brugernes spørgsmål om CIMT som virksomhed, herunder information om virksomhedens værdier, kultur og services.
+
+- **Jobmatching**  
+  Finder og anbefaler ledige stillinger, der passer til brugerens profil og interesser.
+
+- **Dynamisk og intelligent**  
+  Bruger OpenAI’s GPT-model til at give naturlige og relevante svar baseret på brugerens input.
+
+- **Skalerbar**  
+  Kan udvides med flere funktioner, såsom at håndtere flere sprog eller flere typer forespørgsler.
+
+
+
+## Installation
+
+1. Klon projektet via terminalen:
+
+```bash
+git clone https://github.com/majaa0306/cimt.git
+cd cimt/backend
+```
+
+2. Installer afhængigheder (fra package.json):
+
+```bash
+npm install
+```
+3. Opret en .env-fil i backend-mappen med følgende indhold:
+
+```env
+OPENAI_API_KEY=indsæt din nøgle her
+PORT=3001
+
+```
+
+4. Start serveren:
+```bash
+npm run dev
+```
+
+5. Åben browseren og test om det virker på:
+http://localhost:3001
+
+    
+## Krav
+
+- **Node.js** version 14 eller nyere  
+- **npm** (Node Package Manager)  
+- En gyldig **OpenAI API-nøgle**  
+- Internetforbindelse til at kommunikere med OpenAI's API  
+- (Valgfrit) En browser til at teste chatbotten på `http://localhost:3001`  
+
+## Udviklere
+
+Victoria Stephanie Sørensen Vevest og Maja Thorsøe Andersen
