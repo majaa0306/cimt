@@ -4,7 +4,7 @@
 En intelligent chatbot til CIMT, der besvarer spørgsmål om virksomheden og hjælper brugere med at finde ledige stillinger, der passer til deres profil.
 
 
-## Features
+## Egenskaber
 
 - **Svar på spørgsmål om CIMT**  
   Chatbotten kan besvare brugernes spørgsmål om CIMT som virksomhed, herunder information om virksomhedens værdier, kultur og services.
