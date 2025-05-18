@@ -1,26 +1,3 @@
-// import { OpenAI } from 'openai';
-// import dotenv from 'dotenv';
-// dotenv.config();
-
-// const openai = new OpenAI({
-//   apiKey: process.env.OPENAI_API_KEY,
-// });
-
-// export async function askChatGPT(question) {
-//   // Tilføj instruktioner til prompten for at sikre, at svaret er på dansk og venligt
-//   const prompt = `Svar venligst på dansk og vær høflig. Spørgsmålet er: ${question}`;
-
-//   const chatCompletion = await openai.chat.completions.create({
-//     model: 'gpt-3.5-turbo',
-//     messages: [
-//       { role: 'system', content: 'Du skal altid svare på dansk og være venlig.' },
-//       { role: 'user', content: prompt }
-//     ],
-//   });
-
-//   return chatCompletion.choices[0].message.content;
-// }
-
 import { OpenAI } from 'openai';
 import dotenv from 'dotenv';
 import fs from 'fs';
@@ -62,7 +39,7 @@ ${jobText}
 
 Brugerens spørgsmål: ${question}
 
-Svar venligt, på dansk, og med et fokus på at matche behov med relevante job eller information om CIMT.
+Svar venligt, på dansk, og med et fokus på at matche behov med relevante job eller information om CIMT. Svar i flere korte afsnit og brug fed skrift til at fremhæve vigtige ord eller sætninger. Brug markdown-format.
 `;
 
     const chatCompletion = await openai.chat.completions.create({

@@ -37,7 +37,7 @@ export default function Chat() {
         />
       </div>
 
-      <div className={`chat-container ${isChatVisible ? "visible" : ""}`}>
+      <div className={`chat-container ${isChatVisible ? "visible" : "not-visible"}`}>
         <div className="chat-title">
           <img
             src={robert}

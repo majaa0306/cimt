@@ -152,6 +152,27 @@ p {
   }
 }
 
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
 .chat-container {
   position: fixed;
   border: 1px solid rgb(193, 193, 193);
@@ -164,8 +185,16 @@ p {
   overflow: hidden;
   z-index: 1000;
   min-height: 80vh;
+  transform: translateX(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
   &.visible {
     display: flex;
+    animation: slideInFromRight 0.4s ease-out forwards;
+  }
+  &.not-visible {
+    display: flex;
+    animation: slideInFromLeft 0.5s ease-out forwards;
   }
 
   .chat-title {
@@ -256,6 +285,16 @@ p {
     width: 96vw;
     max-width: 500px;
     right: 2vw;
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

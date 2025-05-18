@@ -1,30 +1,65 @@
 [
-    {
-      "id": 1,
-      "titel": "Frontend udvikler",
-      "lokation": "København",
-      "beskrivelse": "Vi søger en frontend udvikler med erfaring i React og SCSS. Du kommer til at arbejde på brugergrænseflader til industrielle systemer.",
-      "kompetencer": ["React", "SCSS", "UX-design"],
-      "branche": "IT og software",
-      "kontaktperson": "Mette Larsen, Stab, ml@cimt.dk"
-    },
-    {
-      "id": 2,
-      "titel": "Dataanalytiker",
-      "lokation": "København",
-      "beskrivelse": "Er du skarp til at finde mønstre i data? CIMT søger en analytiker med flair for Python og SQL til at understøtte forretningsudvikling.",
-      "kompetencer": ["Python", "SQL", "Power BI"],
-      "branche": "Data og analyse",
-      "kontaktperson": "Jonas Nielsen, Integrations udvikling, jn@cimt.dk"
-    },
-    {
-      "id": 3,
-      "titel": "Projektleder",
-      "lokation": "København",
-      "beskrivelse": "CIMT udvider og mangler en struktureret projektleder til at styre tværgående IT-projekter. Erfaring med agile metoder er en fordel.",
-      "kompetencer": ["Projektledelse", "Scrum", "Kommunikation"],
-      "branche": "Ledelse og IT",
-      "kontaktperson": "Louise Andersen, Strategisk porteføljestyring, la@cimt.dk"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "titel": "Frontend udvikler",
+    "lokation": "København",
+    "beskrivelse": "Vi søger en frontend udvikler med erfaring i React og SCSS. Du kommer til at arbejde på brugergrænseflader til industrielle systemer.",
+    "kompetencer": ["React", "SCSS", "UX-design"],
+    "branche": "IT og software",
+    "kontaktperson": "Mette Larsen, Stab, ml@cimt.dk"
+  },
+  {
+    "id": 2,
+    "titel": "Dataanalytiker",
+    "lokation": "København",
+    "beskrivelse": "Er du skarp til at finde mønstre i data? CIMT søger en analytiker med flair for Python og SQL til at understøtte forretningsudvikling.",
+    "kompetencer": ["Python", "SQL", "Power BI"],
+    "branche": "Data og analyse",
+    "kontaktperson": "Jonas Nielsen, Integrations udvikling, jn@cimt.dk"
+  },
+  {
+    "id": 3,
+    "titel": "Projektleder",
+    "lokation": "København",
+    "beskrivelse": "CIMT udvider og mangler en struktureret projektleder til at styre tværgående IT-projekter. Erfaring med agile metoder er en fordel.",
+    "kompetencer": ["Projektledelse", "Scrum", "Kommunikation"],
+    "branche": "Ledelse og IT",
+    "kontaktperson": "Louise Andersen, Strategisk porteføljestyring, la@cimt.dk"
+  },
+  {
+    "id": 4,
+    "titel": "Backend udvikler",
+    "lokation": "Aarhus",
+    "beskrivelse": "Vi søger en backend udvikler med erfaring i Node.js og databaser til at udvikle robuste API'er og sikre dataflow i vores systemer.",
+    "kompetencer": ["Node.js", "MongoDB", "REST API"],
+    "branche": "IT og software",
+    "kontaktperson": "Peter Hansen, Udvikling, ph@cimt.dk"
+  },
+  {
+    "id": 5,
+    "titel": "UX/UI Designer",
+    "lokation": "Odense",
+    "beskrivelse": "CIMT leder efter en kreativ UX/UI designer, der kan designe intuitive brugeroplevelser til vores softwareprodukter.",
+    "kompetencer": ["UX Research", "Figma", "Prototyping"],
+    "branche": "Design og kreativitet",
+    "kontaktperson": "Anne Møller, Produktdesign, am@cimt.dk"
+  },
+  {
+    "id": 6,
+    "titel": "Systemadministrator",
+    "lokation": "København",
+    "beskrivelse": "Vi søger en systemadministrator, der kan sikre drift, sikkerhed og vedligeholdelse af vores IT-infrastruktur.",
+    "kompetencer": ["Linux", "Netværk", "Sikkerhed"],
+    "branche": "IT og netværk",
+    "kontaktperson": "Thomas Kristensen, IT-drift, tk@cimt.dk"
+  },
+  {
+    "id": 7,
+    "titel": "Marketingkoordinator",
+    "lokation": "København",
+    "beskrivelse": "Har du flair for digital marketing? Vi søger en marketingkoordinator til at hjælpe med kampagner og sociale medier.",
+    "kompetencer": ["SEO", "Google Ads", "Content Creation"],
+    "branche": "Marketing og kommunikation",
+    "kontaktperson": "Sofie Jensen, Marketing, sj@cimt.dk"
+  }
+]
