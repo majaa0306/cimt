@@ -422,4 +422,37 @@ p {
 footer {
   background-color: #6B6B6B;
   height: 20em;
+}
+
+.header {
+  height: 110px;
+}
+.header .header-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 2em;
+  margin: 0 auto;
+  height: 110px;
+}
+.header .header-content .right, .header .header-content .left {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+.header .header-content ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+.header .header-content .logo {
+  height: 4em;
+}
+.header .header-content .flag {
+  height: 1.1em;
+}
+.header .header-content .line {
+  width: 1px;
+  height: 110px;
+  background-color: rgb(175, 175, 175);
 }/*# sourceMappingURL=App.css.map */

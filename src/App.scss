@@ -334,3 +334,37 @@ footer {
   background-color: $grey;
   height: 20em;
 }
+
+
+.header {
+  height: 110px;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 2em;
+    margin: 0 auto;
+    height: 110px;
+    .right, .left {
+      display: flex;
+      gap: 2em;
+      align-items: center;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 1em;
+    }
+    .logo {
+      height: 4em;
+    }
+    .flag {
+      height: 1.1em;
+    }
+    .line {
+      width: 1px;
+      height: 110px;
+      background-color: rgb(175, 175, 175);
+    }
+  }
+}
