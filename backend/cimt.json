@@ -1,8 +1,8 @@
 {
-    "navn": "CIMT",
-    "beskrivelse": "CIMT er en konsulentvirksomhed med speciale i IT-løsninger til sundhedssektoren. Vi arbejder med dataintegration, procesoptimering og digital transformation. Vi har afdelinger København.",
-    "værdier": ["tillid", "innovation", "faglighed"],
-    "fokusområder": ["Sundheds-IT", "Dataanalyse", "Brugercentreret udvikling"]
-  }
-
-  
+  "navn": "CIMT",
+  "beskrivelse": "CIMT er en konsulentvirksomhed med speciale i IT-løsninger til sundhedssektoren. Vi arbejder med dataintegration, procesoptimering og digital transformation. Vi har afdelinger i København.",
+  "værdier": ["tillid", "innovation", "faglighed"],
+  "fokusområder": ["Sundheds-IT", "Dataanalyse", "Brugercentreret udvikling"],
+  "fordele": ["Godt arbejdsmiljø", "Fleksible arbejdstider", "Mulighed for faglig udvikling"],
+  "udfordringer": ["Korte deadlines", "Skiftende projekter"]
+}

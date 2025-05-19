@@ -4,14 +4,14 @@ import { askChatGPT } from '../openai.js';
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-  const { question } = req.body;
+  const { message } = req.body;
 
-  if (!question) {
-    return res.status(400).json({ error: 'No question provided' });
+  if (!message) {
+    return res.status(400).json({ error: 'Ingen besked modtaget' });
   }
 
   try {
-    const answer = await askChatGPT(question);
+    const answer = await askChatGPT(message);
     res.json({ answer });
   } catch (error) {
     console.error('🔴 Fejl i askChatGPT:', error.message);
