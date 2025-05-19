@@ -18,7 +18,7 @@ export default function Chat() {
     const response = await fetch("http://localhost:3001/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question: input })
+      body: JSON.stringify({ message: input })
     });
 
     const data = await response.json();

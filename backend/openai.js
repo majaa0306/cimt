@@ -39,7 +39,7 @@ ${jobText}
 
 Brugerens spørgsmål: ${question}
 
-Svar venligt, på dansk, og med et fokus på at matche behov med relevante job eller information om CIMT. Svar i flere korte afsnit og brug fed skrift til at fremhæve vigtige ord eller sætninger. Brug markdown-format.
+Svar venligt, på dansk, og med et fokus på at matche behov med relevante job eller information om CIMT. Svar meget kort og præcist.
 `;
 
     const chatCompletion = await openai.chat.completions.create({
@@ -47,7 +47,8 @@ Svar venligt, på dansk, og med et fokus på at matche behov med relevante job e
       messages: [
         { role: 'system', content: 'Du skal altid svare på dansk og være venlig.' },
         { role: 'user', content: prompt }
-      ]
+      ],
+      max_tokens: 150,  // <-- her sætter du maks længde
     });
 
     return chatCompletion.choices[0].message.content;

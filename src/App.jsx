@@ -4,6 +4,7 @@ import img2 from './assets/img2.webp';
 import img3 from './assets/img3.webp';
 import header from './assets/header.webp';
 import Chat from './Components/Chat';
+import Header from './Components/Header';
 
 import React from "react";
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <img src={header} alt="" style={{ width: "100%" }} />
       <img src={img1} className='imgtop' alt="" style={{ width: "100%" }} />
       <div className='textBluebox'>
