@@ -4,7 +4,7 @@
     "titel": "Frontend udvikler",
     "lokation": "København",
     "beskrivelse": "Vi søger en frontend udvikler med erfaring i React og SCSS. Du kommer til at arbejde på brugergrænseflader til industrielle systemer.",
-    "kompetencer": ["React", "SCSS", "UX-design"],
+    "kompetencer": ["React", "SCSS", "UX-design", "JavaScript", "CSS", "HTML"],
     "branche": "IT og software",
     "kontaktperson": "Mette Larsen, Stab, ml@cimt.dk"
   },
@@ -13,7 +13,7 @@
     "titel": "Dataanalytiker",
     "lokation": "København",
     "beskrivelse": "Er du skarp til at finde mønstre i data? CIMT søger en analytiker med flair for Python og SQL til at understøtte forretningsudvikling.",
-    "kompetencer": ["Python", "SQL", "Power BI"],
+    "kompetencer": ["Python", "SQL", "Power BI", "Databaser"],
     "branche": "Data og analyse",
     "kontaktperson": "Jonas Nielsen, Integrations udvikling, jn@cimt.dk"
   },
@@ -29,16 +29,16 @@
   {
     "id": 4,
     "titel": "Backend udvikler",
-    "lokation": "Aarhus",
+    "lokation": "København",
     "beskrivelse": "Vi søger en backend udvikler med erfaring i Node.js og databaser til at udvikle robuste API'er og sikre dataflow i vores systemer.",
-    "kompetencer": ["Node.js", "MongoDB", "REST API"],
+    "kompetencer": ["Node.js", "MongoDB", "REST API", "Bootstrap", "Express.js", "Java"],
     "branche": "IT og software",
     "kontaktperson": "Peter Hansen, Udvikling, ph@cimt.dk"
   },
   {
     "id": 5,
     "titel": "UX/UI Designer",
-    "lokation": "Odense",
+    "lokation": "København",
     "beskrivelse": "CIMT leder efter en kreativ UX/UI designer, der kan designe intuitive brugeroplevelser til vores softwareprodukter.",
     "kompetencer": ["UX Research", "Figma", "Prototyping"],
     "branche": "Design og kreativitet",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "titel": "Systemadministrator",
-    "lokation": "København",
+    "lokation": "Gentofte",
     "beskrivelse": "Vi søger en systemadministrator, der kan sikre drift, sikkerhed og vedligeholdelse af vores IT-infrastruktur.",
     "kompetencer": ["Linux", "Netværk", "Sikkerhed"],
     "branche": "IT og netværk",
@@ -58,7 +58,7 @@
     "titel": "Marketingkoordinator",
     "lokation": "København",
     "beskrivelse": "Har du flair for digital marketing? Vi søger en marketingkoordinator til at hjælpe med kampagner og sociale medier.",
-    "kompetencer": ["SEO", "Google Ads", "Content Creation"],
+    "kompetencer": ["SEO", "Google Ads", "Content Creation", "Personas", "Markedsføring", "Kampagner", "Sociale medier", "Grafisk design"],
     "branche": "Marketing og kommunikation",
     "kontaktperson": "Sofie Jensen, Marketing, sj@cimt.dk"
   }
