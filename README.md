@@ -38,7 +38,6 @@ npm install
 
 ```env
 OPENAI_API_KEY=indsæt din nøgle her
-PORT=3001
 
 ```
 

@@ -64,9 +64,6 @@ export default function Chat() {
             handleSend();
           }}
         >
-          <label htmlFor="chat-input" className="visually-hidden">
-            Skriv dit spørgsmål
-          </label>
           <input
             id="chat-input"
             name="chat-input"

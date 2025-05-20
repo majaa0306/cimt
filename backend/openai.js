@@ -19,8 +19,15 @@ const cimtInfo = JSON.parse(fs.readFileSync(cimtDataPath, 'utf8'));
 export async function askChatGPT(question) {
   try {
     const jobText = jobopslag
-      .map(job => `• ${job.titel}: ${job.beskrivelse}`)
-      .join('\n');
+      .map(job => `
+    • ${job.titel}
+      Lokation: ${job.lokation}
+      Branche: ${job.branche}
+      Kompetencer: ${job.kompetencer.join(', ')}
+      Beskrivelse: ${job.beskrivelse}
+      Kontakt: ${job.kontaktperson}
+    `).join('\n');
+
 
     const cimtText = `
 Om CIMT: ${cimtInfo.beskrivelse}
