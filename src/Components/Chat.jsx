@@ -1,7 +1,6 @@
 import { useState } from "react";
 import robert from "../assets/robert.webp";
 
-// function for keyboard navigation and activation
 function handleKeyActivate(e, onClick) {
   if (e.key === "Enter" || e.key === " ") {
     e.preventDefault();
@@ -23,7 +22,7 @@ export default function Chat() {
     setMessages(newMessages);
     setInput("");
 
-    const response = await fetch("http://localhost:3001/ask", {
+    const response = await fetch("https://localhost:3001/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: input })
