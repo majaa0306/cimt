@@ -1,6 +1,14 @@
 import { useState } from "react";
 import robert from "../assets/robert.webp";
 
+// function for keyboard navigation and activation
+function handleKeyActivate(e, onClick) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    onClick();
+  }
+}
+
 export default function Chat() {
   const [messages, setMessages] = useState([
     { sender: "bot", text: "Hej! Kan jeg hjælpe dig med at finde det helt rigtige job? Skriv hvad dine kompetencer er nedenfor." }
@@ -27,17 +35,29 @@ export default function Chat() {
 
   return (
     <>
-      <div className="robert" aria-label="Åben chatvindue" role="button" onClick={() => setIsChatVisible(true)}>
+      <div
+        className="robert"
+        aria-label="Åbn chatvindue"
+        role="button"
+        tabIndex={0}
+        onClick={() => setIsChatVisible(true)}
+        onKeyDown={e => handleKeyActivate(e, () => setIsChatVisible(true))}
+      >
         <div className='buttonBox '>
           <h3>Hej, mit navn er Robert! Chat med din AI job assistent...</h3>
-        </div>        
+        </div>
         <img
           src={robert}
           alt="En illustration af Robert, en AI-genereret rekrutterings chatbot."
         />
       </div>
 
-      <div className={`chat-container ${isChatVisible ? "visible" : "not-visible"}`}>
+      <div
+        className={`chat-container ${isChatVisible ? "visible" : "not-visible"}`}
+        aria-label="Chatvindue med Robert, AI job assistent"
+        role="dialog"
+        aria-modal="true"
+      >
         <div className="chat-title">
           <img
             src={robert}
@@ -46,11 +66,15 @@ export default function Chat() {
             className="robert-in-chat"
           />
           <h2>Robert</h2>
-          <button onClick={() => setIsChatVisible(false)} className="close-chat" aria-label="Luk chatvindue">
+          <button
+            onClick={() => setIsChatVisible(false)}
+            className="close-chat"
+            aria-label="Luk chatvindue"
+          >
             ×
           </button>
         </div>
-        <div className="chat-box">
+        <div className="chat-box" aria-live="polite" aria-label="Chatbeskeder">
           {messages.map((msg, i) => (
             <div key={i} className={`chat-message ${msg.sender}`}>
               <span>{msg.text}</span>
@@ -63,10 +87,13 @@ export default function Chat() {
             e.preventDefault();
             handleSend();
           }}
+          aria-label="Send besked til Robert"
         >
-          <label>
+          <label htmlFor="chat-input" className="visually-hidden">
+            Skriv din besked til Robert
+          </label>
           <input
-          type="text"
+            type="text"
             id="chat-input"
             name="chat-input"
             value={input}
@@ -74,12 +101,13 @@ export default function Chat() {
             placeholder="Skriv et spørgsmål..."
             className="chat-input"
             autoComplete="off"
-            aria-label="Chat inputfelt"
-            
+            aria-label="Skriv din besked til Robert"
           />
-          </label>
-          <button type="submit" className="chat-send"
-          aria-label="Send">
+          <button
+            type="submit"
+            className="chat-send"
+            aria-label="Send besked"
+          >
             Send
           </button>
         </form>

@@ -8,7 +8,26 @@ import Breadcrumbs from './Components/Breadcrumbs';
 
 import React from "react";
 
+//function to handle keyboard activation for divs acting as buttons
+function handleKeyActivate(e, onClick) {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    onClick();
+  }
+}
+
 function App() {
+
+  // Example click handlers for demonstration
+  const handleHverdagClick = () => {
+    alert("Læs om hverdagen i CIMT");
+  };
+  const handleVaerdierClick = () => {
+    alert("Læs om værdier og trivsel");
+  };
+  const handleLokationerClick = () => {
+    alert("Læs om CIMT's lokationer");
+  };
 
   return (
     <>
@@ -46,19 +65,40 @@ function App() {
         <h2>Hvad kan CIMT?</h2>
         <p>Se dine udviklingsmuligheder i CIMT – hvor karriere, læring og faglig vækst går hånd i hånd.</p>
         <div className='buttonBoxFrame'>
-          <div className='buttonBox' aria-label="Læs om hverdagen i CIMT">
+          <div
+            className='buttonBox'
+            aria-label="Læs om hverdagen i CIMT"
+            tabIndex={0}
+            role="button"
+            onClick={handleHverdagClick}
+            onKeyDown={e => handleKeyActivate(e, handleHverdagClick)}
+          >
             <h3>Hverdagen i CIMT</h3>
             <p className='miniText'>
               Mød vores medarbejdere
             </p>
           </div>
-          <div className='buttonBox' aria-label="Læs om værdier og trivsel">
+          <div
+            className='buttonBox'
+            aria-label="Læs om værdier og trivsel"
+            tabIndex={0}
+            role="button"
+            onClick={handleVaerdierClick}
+            onKeyDown={e => handleKeyActivate(e, handleVaerdierClick)}
+          >
             <h3>Værdier, medindflydelse og trivsel</h3>
             <p className='miniText'>
               CIMT’s værdier
             </p>
           </div>
-          <div className='buttonBox' aria-label="Læs om CIMT's lokationer">
+          <div
+            className='buttonBox'
+            aria-label="Læs om CIMT's lokationer"
+            tabIndex={0}
+            role="button"
+            onClick={handleLokationerClick}
+            onKeyDown={e => handleKeyActivate(e, handleLokationerClick)}
+          >
             <h3>Mange ambitioner - fælles lokationer</h3>
             <p className='miniText'>
               CIMT’s lokationer
