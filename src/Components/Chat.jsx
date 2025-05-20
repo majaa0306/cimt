@@ -27,13 +27,13 @@ export default function Chat() {
 
   return (
     <>
-      <div className="robert" onClick={() => setIsChatVisible(true)}>
+      <div className="robert" aria-label="Åben chatvindue" role="button" onClick={() => setIsChatVisible(true)}>
         <div className='buttonBox '>
           <h3>Hej, mit navn er Robert! Chat med din AI job assistent...</h3>
         </div>        
         <img
           src={robert}
-          alt="Robert"
+          alt="En illustration af Robert, en AI-genereret rekrutterings chatbot."
         />
       </div>
 
@@ -41,12 +41,12 @@ export default function Chat() {
         <div className="chat-title">
           <img
             src={robert}
-            alt="Robert"
+            alt="En illustration af Robert, en AI-genereret rekrutterings chatbot."
             onClick={() => setIsChatVisible(true)}
             className="robert-in-chat"
           />
           <h2>Robert</h2>
-          <button onClick={() => setIsChatVisible(false)} className="close-chat">
+          <button onClick={() => setIsChatVisible(false)} className="close-chat" aria-label="Luk chatvindue">
             ×
           </button>
         </div>
@@ -64,7 +64,9 @@ export default function Chat() {
             handleSend();
           }}
         >
+          <label>
           <input
+          type="text"
             id="chat-input"
             name="chat-input"
             value={input}
@@ -72,8 +74,12 @@ export default function Chat() {
             placeholder="Skriv et spørgsmål..."
             className="chat-input"
             autoComplete="off"
+            aria-label="Chat inputfelt"
+            
           />
-          <button type="submit" className="chat-send">
+          </label>
+          <button type="submit" className="chat-send"
+          aria-label="Send">
             Send
           </button>
         </form>

@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <Breadcrumbs />
-      <img src={img1} className='imgtop' alt="" style={{ width: "100%" }} />
+      <img src={img1} className='imgtop' alt="Billede af to kvindelige medarbejdere der sidder i en sofa og kigger sammen på en laptop." style={{ width: "100%" }} />
       <div className='textBluebox'>
         <h1>CIMT som arbejdsplads</h1>
         <p>CIMT’s medarbejdere er dedikerede. Vi synes vores arbejdsopgaver er vigtige, fordi digitalisering handler om liv.</p>
@@ -22,7 +22,7 @@ function App() {
       <div className='boxFrame whitespace'>
         <div className='box'>
           <div className='content'>
-            <img src={img2} alt="" style={{ width: "100%" }} />
+            <img src={img2} alt="Billedet viser to kvindelige medarbejdere, den ene kvinde smiler og kigger på den anden kvinde, som er i gang med at fortælle noget. De står ved en computerskærm og en laptop." style={{ width: "100%" }} />
             <h3>CIMT og Kariere</h3>
             <h2>Boost din karriere hos os</h2>
             <p><span className='boldText'>I CIMT tilbyder vi meningsfulde karrieremuligheder.</span> Hos os får du mulighed for at arbejde med komplekse samfundsudfordringer og sundhedsteknologi, i et miljø hvor faglig udvikling, fleksibilitet og samarbejde er i centrum. </p>
@@ -32,7 +32,7 @@ function App() {
         </div>
         <div className='box'>
           <div className='content'>
-            <img src={img3} alt="" style={{ width: "100%" }} />
+            <img src={img3} alt="Billedet viser en kvinde, som holder nogle papirer mens hun er på vej ud af en mødeboks." style={{ width: "100%" }} />
             <h3>En unik arbejdsplads</h3>
             <h2>Vi skaber fremtiden</h2>
             <p><span className='boldText'> Et job hos os</span> er ikke bare et arbejde. Her er du ikke bare medarbejder – du er med til at forme noget større.</p>
@@ -46,19 +46,19 @@ function App() {
         <h2>Hvad kan CIMT?</h2>
         <p>Se dine udviklingsmuligheder i CIMT – hvor karriere, læring og faglig vækst går hånd i hånd.</p>
         <div className='buttonBoxFrame'>
-          <div className='buttonBox'>
+          <div className='buttonBox' aria-label="Læs om hverdagen i CIMT">
             <h3>Hverdagen i CIMT</h3>
             <p className='miniText'>
               Mød vores medarbejdere
             </p>
           </div>
-          <div className='buttonBox'>
+          <div className='buttonBox' aria-label="Læs om værdier og trivsel">
             <h3>Værdier, medindflydelse og trivsel</h3>
             <p className='miniText'>
               CIMT’s værdier
             </p>
           </div>
-          <div className='buttonBox'>
+          <div className='buttonBox' aria-label="Læs om CIMT's lokationer">
             <h3>Mange ambitioner - fælles lokationer</h3>
             <p className='miniText'>
               CIMT’s lokationer

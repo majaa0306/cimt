@@ -8,7 +8,7 @@ function Header() {
       <p className="megaMiniText smallAbove">FOR SUNDHED I MEDIESTADEN</p>
       <div className="header-content">
         <div className="left">
-          <img className="logo" src={logo} alt="" />
+          <img className="logo" src={logo} alt="Billedet viser et logo for hjemmesiden." aria-label="Logo for hjemmesiden" />
           <p className="miniText small">For sundhed i mediestaden</p>
         </div>
         <div className="right">
@@ -20,7 +20,7 @@ function Header() {
               <p className="miniText">Til fagfolk</p>
             </li>
           </ul>
-          <img className="flag medium" src={flag} alt="" />
+          <img className="flag medium" src={flag} alt="Billedet viser det danske flag." aria-label="Dansk flag"/>
           <div className="line"></div>
           <p className="miniText">Søg</p>
           <div className="menu">
@@ -33,15 +33,15 @@ function Header() {
       </div>
       <div className="under">      
         <ul className="mediumUnder">
-          <li>
-            <p className="miniText">Til borgere</p>
+          <li className="miniText">
+            Til borgere
           </li>
-          <li>
-            <p className="miniText">Til fagfolk</p>
+          <li className="miniText">
+            Til fagfolk
           </li>
         </ul>
         <div className="line"></div>
-        <img className="flag mediumUnder" src={flag} alt="" />
+        <img className="flag mediumUnder" src={flag} alt="Billedet viser et dansk flag"  aria-label="Dansk flag" />
         <div className="line"></div>
       </div>
 

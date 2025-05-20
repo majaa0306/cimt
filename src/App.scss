@@ -175,6 +175,7 @@ p {
   border: 1px solid rgb(193, 193, 193);
   bottom: 1rem;
   right: 1rem;
+  border-radius: 4px;
   width: 450px;
   background: $backgroundColor;
   display: none;
@@ -260,22 +261,27 @@ p {
 
   .chat-input-container {
     display: flex;
-    padding: 0.5rem 2rem;
-    width: 86%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    width: 90%;
     .chat-input {
       flex: 1;
-      padding: 0.4rem 0.6rem;
-      border: 1px solid $blue;
+      padding: 0.7rem 0.8rem;
+      border: 1px solid $darkBlue;
       font-size: 0.9rem;
+      border-radius: 4px;
 
     }
 
     .chat-send {
-      padding: 0.4rem 0.8rem;
-      background: #007bff;
+      padding: 0rem 1.1rem;
+      background: #002555;
       color: white;
       border: none;
       cursor: pointer;
+      border-radius: 4px;
+      font-size: 20px;
     }
   }
   @media screen and (max-width:1000px) {
