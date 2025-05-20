@@ -71,15 +71,12 @@ p {
 }
 .buttonBoxFrame {
   margin: 2em 0;
-  display: flex;
-  gap: 2%;
+  @include flex(row, flex-start, stretch, 2%);
   .buttonBox{
+    @include flex(column, flex-start, stretch, 3em);
     padding: 1em 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
     border-bottom: 2px solid $blue;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    @include box-shadow-standard;
     width: 32%;
     &:hover {
       cursor: pointer;
@@ -90,9 +87,7 @@ p {
     }
   }
   @media screen and (max-width:950px) {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+    @include flex(column, flex-start, stretch, 2em);
     .buttonBox {
       margin: 0 auto;
       max-width: 500px;
@@ -102,14 +97,10 @@ p {
 }
 .boxFrame {
   margin: 2em 0 5em 0;
-  display: flex;
+  @include flex(row, flex-start, stretch, 4%);
   flex-wrap: wrap;
-  gap: 4%;
   .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
+    @include flex(column, space-between, stretch, 0);
     width: 48%;
     .line {
       width: 30%;
@@ -120,8 +111,7 @@ p {
     }
   }
   @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    gap: 2em;
+    @include flex(column, flex-start, stretch, 2em);
     .box {
       width: 80%;
       margin: 0 auto;
@@ -191,7 +181,7 @@ p {
   flex-direction: column;
   overflow: hidden;
   z-index: 1000;
-  min-height: 80vh;
+  height: 80vh;
   transform: translateX(100%);
   transition: transform 0.3s ease, opacity 0.3s ease;
 
@@ -205,8 +195,7 @@ p {
   }
 
   .chat-title {
-    display: flex;
-    align-items: center;
+    @include flex(row, flex-start, center, 0);
     border-bottom: 1px solid rgb(196, 196, 196);
     padding: 0.75rem;
 
@@ -235,8 +224,7 @@ p {
   }
 
   .chat-box {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, flex-start, stretch, 0);
     padding: 0.75rem;
     overflow-y: auto;
     background: #fafafa;
@@ -253,7 +241,7 @@ p {
         background: #ffffff;
         color: $darkBlue;
         border: 1px solid $blue;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        @include box-shadow-standard;
         align-self: flex-start;
         @include responsive-font-size(16px, 16px, 16px);
         @include fonts($darkGrey, "Akatab", 500, 1px);
@@ -262,7 +250,7 @@ p {
       &.user {
         background: #ffffff;
         color: $darkBlue;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        @include box-shadow-standard;
         align-self: flex-end;
         @include responsive-font-size(16px, 16px, 16px);
         @include fonts($darkGrey, "Akatab", 500, 1px);
@@ -273,11 +261,13 @@ p {
   .chat-input-container {
     display: flex;
     padding: 0.5rem 2rem;
+    width: 86%;
     .chat-input {
       flex: 1;
       padding: 0.4rem 0.6rem;
       border: 1px solid $blue;
       font-size: 0.9rem;
+
     }
 
     .chat-send {
@@ -306,12 +296,10 @@ p {
 }
 
 .robert {
+  @include flex(row, flex-start, center, 0.5rem);
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
   margin-left: 10px;
 
@@ -319,7 +307,7 @@ p {
     background: $backgroundColor;
     padding: 0 1rem;
     max-width: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    @include box-shadow-standard;
     border-bottom: 2px solid $blue;
     h3 {
       color: $darkBlue;
@@ -352,16 +340,13 @@ footer {
     display: none;
   }
   .header-content {
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, stretch, 3em);
     max-width: 1200px;
     padding: 0 1em;
     margin: 0 auto;
     height: 100%;
     .right, .left {
-      display: flex;
-      gap: 2em;
-      align-items: center;
+      @include flex(row, flex-start, center, 2em);
     }
     .medium {
       display: flex;
@@ -416,11 +401,8 @@ footer {
   }
   @media screen and (max-width: 1000px) {
     .under {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex(row, center, center, 2em);
       background-color: rgb(239, 239, 239);
-      gap: 2em;
       .mediumUnder {
         display: flex;
         gap: 1em;
@@ -449,3 +431,5 @@ footer {
     font-weight: 600;
   }
 }
+
+//454

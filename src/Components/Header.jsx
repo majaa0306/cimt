@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../assets/logo.png';
-import flag from '../assets/flag.png';
+import logo from '../assets/logo.webp';
+import flag from '../assets/flag.webp';
 
 function Header() {
   return (
